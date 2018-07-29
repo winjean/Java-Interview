@@ -84,9 +84,3 @@ Java 知识点，继续完善中。
 - [TCP/IP 协议](https://github.com/crossoverJie/Java-Interview/blob/master/MD/TCP-IP.md)
 - [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
 
-
-### 联系作者
-
-> crossoverJie#gmail.com
-
-![](https://ws2.sinaimg.cn/large/006tKfTcly1fsa01u7ro1j30gs0howfq.jpg)
