@@ -24,24 +24,24 @@ git
 * git branch -vv  
 	可以查看本地分支对应的远程分支
 
-* git branch -m oldName newName　　　　　　
+* git branch -m oldName newName  　　
 	给分支重命名
 
 ### Git checkout
 	可用于操作文件和操作分支
 
-* git checkout filename
+* git checkout filename  
 	放弃单个文件的修改
 
-* git checkout . 
+* git checkout .  
 	放弃当前目录下的修改
 
-* git checkout master 
+* git checkout master  
 	将分支切换到master
 
-* git checkout -b master 
-	如果分支存在则只切换分支，若不存在则创建并切换到master分支，
-	repo start是对git checkout -b这个命令的封装，将所有仓库的分支都切换到master，master是分支名，
+* git checkout -b master  
+	如果分支存在则只切换分支，若不存在则创建并切换到master分支，  
+	repo start是对git checkout -b这个命令的封装，将所有仓库的分支都切换到master，master是分支名，  
 
-* git checkout --help
+* git checkout --help  
 	当然git checkout还有许多命令，但这些已经能满足我们日常开发所需
