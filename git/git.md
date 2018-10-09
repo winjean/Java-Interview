@@ -24,7 +24,7 @@ git
 * git branch -vv  
 	可以查看本地分支对应的远程分支
 
-* git branch -m oldName newName  　　
+* git branch -m oldName newName  
 	给分支重命名
 
 ### Git checkout
