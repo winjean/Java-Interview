@@ -2,7 +2,7 @@
 git
 ==
 
-###Git branch
+### Git branch
 
 　　　　一般用于分支的操作，比如创建分支，查看分支等等，
 
@@ -33,7 +33,7 @@ git
 　　　　1.7 git branch -m oldName newName
 
 　　　　　　给分支重命名
-###Git checkout
+### Git checkout
 
 　　　　1. 操作文件  2. 操作分支
 
