@@ -47,5 +47,10 @@ git
 	当然git checkout还有许多命令，但这些已经能满足我们日常开发所需
 
 ### git merge
+* git merge dev  
+	Dev表示某分支，表示在当前分支合并Dev分支
+
+* git merge -m  "comment"  dev  
+	-m可以加上merge时要添加的描述性语句，如果出现冲突，那么先解决冲突，再将文件git add，git commit，之后再merge
 
 ### git rebase	
