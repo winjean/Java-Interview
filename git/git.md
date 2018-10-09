@@ -6,19 +6,19 @@ git
 
 	一般用于分支的操作，比如创建分支，查看分支等等，
 
-　　* git branch
+* git branch
 
 　　　　　　不带参数：列出本地已经存在的分支，并且在当前分支的前面用"*"标记
 
-	* git branch -r
+* git branch -r
 
 　　　　　　查看远程版本库分支列表
 
-　　　　1.3 git branch -a
+* git branch -a
 
 　　　　　　查看所有分支列表，包括本地和远程
 
-　　　　1.4 git branch dev
+* git branch dev
 
 　　　　　　创建名为dev的分支，创建分支时需要是最新的环境，创建分支但依然停留在当前分支
 
