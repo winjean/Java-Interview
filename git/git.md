@@ -45,3 +45,7 @@ git
 
 * git checkout --help  
 	当然git checkout还有许多命令，但这些已经能满足我们日常开发所需
+
+### git merge
+
+### git rebase	
