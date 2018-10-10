@@ -28,7 +28,11 @@ git
 	给分支重命名
 
 * git pull origin dev  
-	在远程创建分支并与本地分支相关联
+	在远程创建分支
+
+* git push --set-upstream origin dev  
+	设置远程分支与本地分支相关联
+
 
 ### Git checkout
 	可用于操作文件和操作分支
