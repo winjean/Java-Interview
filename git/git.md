@@ -27,6 +27,9 @@ git
 * git branch -m oldName newName  
 	给分支重命名
 
+* git pull origin dev  
+	在远程创建分支并与本地分支相关联
+
 ### Git checkout
 	可用于操作文件和操作分支
 
