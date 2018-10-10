@@ -3,7 +3,7 @@ git
 ==
 
 ### SSH Key
-	ssh-keygen -t rsa -C "19548901@qq.com"
+* ssh-keygen -t rsa -C "19548901@qq.com"  
 	生成id_rsa、id_rsa.pub文件
 
 ### Git branch
