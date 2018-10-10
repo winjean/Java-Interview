@@ -2,6 +2,10 @@
 git
 ==
 
+### SSH Key
+	ssh-keygen -t rsa -C "19548901@qq.com"
+	生成id_rsa、id_rsa.pub文件
+
 ### Git branch
 
 	一般用于分支的操作，比如创建分支，查看分支等等，
