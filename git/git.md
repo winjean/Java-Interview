@@ -27,7 +27,7 @@ git
 * git branch -m oldName newName  
 	给分支重命名
 
-* git pull origin dev  
+* git push origin dev  
 	在远程创建分支
 
 * git push origin --delete dev  
