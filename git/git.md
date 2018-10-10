@@ -30,6 +30,9 @@ git
 * git pull origin dev  
 	在远程创建分支
 
+* git push origin --delete dev  
+	删除远程分支	
+
 * git push --set-upstream origin dev  
 	设置远程分支与本地分支相关联
 
