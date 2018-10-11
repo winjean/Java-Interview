@@ -69,5 +69,10 @@ git 使用
 * git merge -m  "comment"  dev  
 	-m可以加上merge时要添加的描述性语句，如果出现冲突，那么先解决冲突，再将文件git add，git commit，之后再merge
 
-### git rebase	
+### git rebase
+* git rebase --continue  
+	解决完合并冲突后，继续合并未合并完的操作
+
+* git rebase -- abort  
+	终止rebase操作，将分支回到rebase开始前的状态
 
