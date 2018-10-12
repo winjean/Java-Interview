@@ -96,3 +96,4 @@ git 使用
 
 ### git rm
 * git rm -f fileName
+	删除暂存区和工作区的文件
