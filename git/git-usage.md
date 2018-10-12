@@ -85,5 +85,11 @@ git 使用
 	查看所有git对象信息
 
 ### git reset
-* git reset --hard commit-id  
-	还原到某一个快照
+* git reset --soft commit-id  
+	仅仅只是撤销已提交的版本库，不会修改暂存区和工作区
+
+* git reset --mixed commit-id  
+	仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
+
+* git reset --hard commit-id
+	彻底将工作区、暂存区和版本库记录恢复到指定的版本库
