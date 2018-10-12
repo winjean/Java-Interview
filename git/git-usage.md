@@ -95,5 +95,12 @@ git 使用
 	彻底将工作区、暂存区和版本库记录恢复到指定的版本库
 
 ### git rm
+* git rm --cache fileName
+	删除暂存区中的文件
+
 * git rm -f fileName
 	删除暂存区和工作区的文件
+
+### git status
+* git status 
+	查看暂存区中的信息
