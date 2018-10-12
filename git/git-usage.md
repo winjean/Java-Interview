@@ -76,3 +76,14 @@ git 使用
 * git rebase -- abort  
 	终止rebase操作，将分支回到rebase开始前的状态
 
+### git log
+* git log  
+	查看提交日志
+
+### git reflog
+* git reflog  	
+	查看所有git对象信息
+
+### git reset
+* git reset --hard commit-id  
+	还原到某一个快照
