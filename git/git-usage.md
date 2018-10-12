@@ -93,3 +93,6 @@ git 使用
 
 * git reset --hard commit-id
 	彻底将工作区、暂存区和版本库记录恢复到指定的版本库
+
+### git rm
+* git rm -f fileName
