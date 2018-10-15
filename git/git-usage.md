@@ -2,6 +2,8 @@
 git 使用
 ==
 
+[易百教程](https://www.yiibai.com/git/git_push.html)  
+
 ### SSH Key
 * ssh-keygen -t rsa -C "19548901@qq.com"  
 	密钥类型可以用 -t 选项指定;如果没有指定则默认生成用于SSH-2的RSA密钥,这里使用的是rsa  
@@ -33,8 +35,9 @@ git 使用
 * git branch -m oldName newName  
 	给分支重命名
 
-* git push origin dev  
-	在远程创建分支
+* git push -u origin dev  
+	在远程创建分支  
+	-u 指定origin为默认主机，后面就可以不加任何参数使用git push
 
 * git push origin --delete dev  
 	删除远程分支	
