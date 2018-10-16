@@ -64,8 +64,8 @@ git pull 相当于 git fetch 和 git merge 功能的组合
 	将分支切换到master
 
 * git checkout -b test   
-	如果分支存在则只切换分支，若不存在则创建并切换到test分支，  
-	repo start是对git checkout -b这个命令的封装，将所有仓库的分支都切换到master，master是分支名，  
+如果分支存在则只切换分支，若不存在则创建并切换到test分支，  
+repo start是对git checkout -b这个命令的封装，将所有仓库的分支都切换到master，master是分支名  
 
 * git checkout -b test origin/master  
 在origin/master的基础上，创建一个新分支:test  
