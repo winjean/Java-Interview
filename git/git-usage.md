@@ -34,7 +34,7 @@ git 使用
 
 * git branch -m oldName newName  
 	给分支重命名
-	
+
 ### git push
 * git push -u origin dev  
 	在远程创建分支  
@@ -95,7 +95,7 @@ git 使用
 * git reset --mixed commit-id  
 	仅仅只是撤销已提交的版本库和暂存区，不会修改工作区
 
-* git reset --hard commit-id
+* git reset --hard commit-id  
 	彻底将工作区、暂存区和版本库记录恢复到指定的版本库
 
 ### git rm
