@@ -82,7 +82,7 @@ git 使用
 
 ### git log
 * git log  
-	查看提交日志
+	查看提交日志,按q退出
 
 ### git reflog
 * git reflog  	
