@@ -34,7 +34,8 @@ git 使用
 
 * git branch -m oldName newName  
 	给分支重命名
-
+	
+### git push
 * git push -u origin dev  
 	在远程创建分支  
 	-u 指定origin为默认主机，后面就可以不加任何参数使用git push
