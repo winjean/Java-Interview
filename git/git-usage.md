@@ -108,3 +108,7 @@ git 使用
 ### git status
 * git status 
 	查看暂存区中的信息
+
+### gitk
+* gitk dev
+查看push的结果
