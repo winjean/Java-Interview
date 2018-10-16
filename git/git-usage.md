@@ -46,6 +46,10 @@ git 使用
 * git push --set-upstream origin dev  
 	设置远程分支与本地分支相关联
 
+### git pull
+* git pull origin remoteBranch:localBranch
+要取回origin主机的remoteBranch分支，与本地的localBranch分支合并  
+git pull 相当于 git fetch 和 git merge 功能的组合
 
 ### Git checkout
 	可用于操作文件和操作分支
