@@ -91,6 +91,9 @@ repo start是对git checkout -b这个命令的封装，将所有仓库的分支�
 * git log  
 	查看提交日志,按q退出
 
+* git log -n  
+查看最近n次提交的日志信息
+
 ### git reflog
 * git reflog  	
 	查看所有git对象信息
