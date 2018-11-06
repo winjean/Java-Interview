@@ -9,5 +9,5 @@
 * [Stirng](redis-String.md)
 * [Hash](redis-hash.md)
 * [List](redis-list.md)
-* [Set]
-* [zset]
+* [Set](redis-set.md)
+* [zset](redis-zset.md)
