@@ -3,8 +3,7 @@ netty学习
 [netty权威指南](http://ifeve.com/netty-2-6/)
 
 1. Netty是什么  
-Netty是一款用于创建高性能网络应用程序的高级框架  
-是一款异步的事件驱动的网络应用程序框架，支持快速地开发可维护的高性能的面向协议的服务器和客户端
+Netty 是一个**异步**事件驱动的网络应用程序框架，用于快速开发可维护的高性能协议服务器和客户端。
 
 2. 选择netty的理由
     1. 跟JDK NIO相比更简单易用 
@@ -28,8 +27,8 @@ EventLoop用于处理Netty的各种事件循环，一个EventLoop只会绑定到
 
 4. netty 中用到技术
     * 反应堆模式  
-    ![Image text](images/netty-reactor.png)
+    ![image](images/netty-reactor.png)
     * epoll
     * bio、nio、aio
 
-5. netty可以做什么，哪些框架底层是由netty实现的
+5. netty可以做什么，哪些框架底层是由netty实现的  
