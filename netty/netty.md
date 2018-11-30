@@ -17,14 +17,17 @@ Netty和Mina的区别
     * EventLoopGroup  
     EventLoopGroup为每个新创建的Channel分配一个EventLoop，不过一个EventLoop可能对应多个Channel（阻塞传输是一对一），所以对于所有在这个EventLoop上的Channel来说，它们的ThreadLocal都将是一样的
     * Channel  
-Channel始终也只会使用一个EventLoop来处理上面的事件，所以Channel是线程安全的，不用采取一些同步措施  
+    Channel始终也只会使用一个EventLoop来处理上面的事件，所以Channel是线程安全的，不用采取一些同步措施  
 Channel 的状态转换
 REGISTERED->CONNECT/BIND->ACTIVE->CLOSE->INACTIVE->UNREGISTERED     
-    * ChannelFuture
+    * ChannelFuture  
+    Channel的异步操作结果
     * EventLoop  
-EventLoop用于处理Netty的各种事件循环，一个EventLoop只会绑定到一个Thread上
-    * ChannelHandler
+    EventLoop用于处理Netty的各种事件循环，一个EventLoop只会绑定到一个Thread上
     * ChannelPipeline
+    * ChannelHandler
+    * ChannelHandlerContext
+    * ByteBuf
 
 4. netty 中用到技术
     * 反应堆模式  
