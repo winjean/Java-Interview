@@ -1,6 +1,7 @@
 netty学习
 ===
 [netty权威指南](http://ifeve.com/netty-2-6/)
+[netty原理浅析](https://www.cnblogs.com/duanxz/p/3468967.html)
 
 1. Netty是什么  
 Netty 是一个**异步**事件驱动的网络应用程序框架，  
@@ -28,6 +29,7 @@ REGISTERED->CONNECT/BIND->ACTIVE->CLOSE->INACTIVE->UNREGISTERED
     * ChannelHandler
     * ChannelHandlerContext
     * ByteBuf
+    
 
 4. netty 中用到技术
     * 反应堆模式  
