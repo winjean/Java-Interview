@@ -6,7 +6,8 @@
 3. CMS Garbage Collector (并发标记扫描) -XX:+USeParNewGC
 4. G1 Garbage Collector –XX:+UseG1GC
 
-GC config  
+* GC config  
+example:java -Xmx12m -Xms3m -Xmn1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+UseSerialGC -jar java-application.jar
 
 |配置|描述|
 |:---:|:---:|
