@@ -28,3 +28,5 @@ example:java -Xmx12m -Xms3m -Xmn1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+Use
 |-XX:SurvivorRatio|年轻代中Eden区与两个Survivor区的比值。注意Survivor区有两个。如：3，表示Eden：Survivor=3：2，一个Survivor区占整个年轻代的1/5|
 |-XX:NewSize|设置年轻代大小|
 |-XX:NewRatio|设置年轻代和年老代的比值。如:为3，表示年轻代与年老代比值为1：3，年轻代占整个年轻代年老代和的1/4|
+
+[打印所有-XX参数](https://www.cnblogs.com/duanxz/p/6098908.html)
