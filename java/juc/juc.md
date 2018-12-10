@@ -17,3 +17,4 @@
 		* [可重入锁 &amp; 不可重入锁](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#可重入锁--不可重入锁)
 		* [互斥锁 &amp; 共享锁](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#互斥锁--共享锁)
 		* [死锁](https://github.com/xingshaocheng/architect-awesome/blob/master/README.md#死锁)
+    * [thread](http://www.cnblogs.com/skywang12345/p/java_threads_category.html)
