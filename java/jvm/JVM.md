@@ -30,3 +30,11 @@ example:java -Xmx12m -Xms3m -Xmn1m -XX:PermSize=20m -XX:MaxPermSize=20m -XX:+Use
 |-XX:NewRatio|设置年轻代和年老代的比值。如:为3，表示年轻代与年老代比值为1：3，年轻代占整个年轻代年老代和的1/4|
 
 [打印所有-XX参数](https://www.cnblogs.com/duanxz/p/6098908.html)
+
+### JVM
+- [Java 运行时内存划分](https://github.com/crossoverJie/Java-Interview/blob/master/MD/MemoryAllocation.md)
+-  [类加载机制](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ClassLoad.md)
+-  [OOM 分析](https://github.com/crossoverJie/Java-Interview/blob/master/MD/OOM-analysis.md)
+- [垃圾回收](https://github.com/crossoverJie/Java-Interview/blob/master/MD/GarbageCollection.md)
+- [对象的创建与内存分配](https://github.com/crossoverJie/Java-Interview/blob/master/MD/newObject.md)
+- [你应该知道的 volatile 关键字](https://github.com/crossoverJie/Java-Interview/blob/master/MD/concurrent/volatile.md)

@@ -18,25 +18,6 @@ Java 知识点，继续完善中。
 - [HashSet](https://github.com/crossoverJie/Java-Interview/blob/master/MD/collection/HashSet.md)
 - [LinkedHashMap](https://github.com/crossoverJie/Java-Interview/blob/master/MD/collection/LinkedHashMap.md)
 
-### Java 多线程
-- [多线程中的常见问题](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Thread-common-problem.md)
-- [synchronize 关键字原理](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Synchronize.md)
-- [多线程的三大核心](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Threadcore.md)
-- [对锁的一些认知](https://github.com/crossoverJie/Java-Interview/blob/master/MD/Java-lock.md)
-- [ReentrantLock 实现原理 ](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ReentrantLock.md)
-- [ConcurrentHashMap 的实现原理](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ConcurrentHashMap.md)
-- [线程池原理](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ThreadPoolExecutor.md)
-- [深入理解线程通信](https://github.com/crossoverJie/Java-Interview/blob/master/MD/concurrent/thread-communication.md)
-- [交替打印奇偶数](https://github.com/crossoverJie/Java-Interview/blob/master/src/main/java/com/crossoverjie/actual/TwoThread.java)
-
-### JVM
-- [Java 运行时内存划分](https://github.com/crossoverJie/Java-Interview/blob/master/MD/MemoryAllocation.md)
--  [类加载机制](https://github.com/crossoverJie/Java-Interview/blob/master/MD/ClassLoad.md)
--  [OOM 分析](https://github.com/crossoverJie/Java-Interview/blob/master/MD/OOM-analysis.md)
-- [垃圾回收](https://github.com/crossoverJie/Java-Interview/blob/master/MD/GarbageCollection.md)
-- [对象的创建与内存分配](https://github.com/crossoverJie/Java-Interview/blob/master/MD/newObject.md)
-- [你应该知道的 volatile 关键字](https://github.com/crossoverJie/Java-Interview/blob/master/MD/concurrent/volatile.md)
-
 ### 分布式相关
 
 - [分布式限流](http://crossoverjie.top/2018/04/28/sbc/sbc7-Distributed-Limit/)
@@ -83,4 +64,3 @@ Java 知识点，继续完善中。
 
 - [TCP/IP 协议](https://github.com/crossoverJie/Java-Interview/blob/master/MD/TCP-IP.md)
 - [一个学渣的阿里之路](https://crossoverjie.top/2018/06/21/personal/Interview-experience/)
-
