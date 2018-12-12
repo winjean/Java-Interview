@@ -1,4 +1,4 @@
-* propagation  
+* **PROPAGATION**  
 PROPAGATION_REQUIRED -- default  
 PROPAGATION_SUPPORTS  
 PROPAGATION_MANDATORY  
@@ -7,7 +7,7 @@ PROPAGATION_NOT_SUPPORTED
 PROPAGATION_NEVER  
 PROPAGATION_NESTED  
 
-* isolation  
+* **ISOLATION**  
 TRANSACTION_READ_UNCOMMITTED -- dirty reads, non-repeatable reads and phantom reads  
 TRANSACTION_READ_COMMITTED -- non-repeatable reads and phantom reads  
 TRANSACTION_REPEATABLE_READ  -- phantom reads  
