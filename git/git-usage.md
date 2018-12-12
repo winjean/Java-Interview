@@ -9,7 +9,8 @@ git 使用
 	密钥类型可以用 -t 选项指定;如果没有指定则默认生成用于SSH-2的RSA密钥,这里使用的是rsa  
 	-C 来指定所指定的注释，可以方便用户标识这个密钥，指出密钥的用途或其他有用的信息。所以在这里输入自己的邮箱或者其他都行  
 	生成id_rsa、id_rsa.pub文件
-	
+
+### git clone	
 * git clone http://username:password@remote_git
 
 ### Git branch
