@@ -30,3 +30,8 @@ $ sudo systemctl enable docker
 9、验证安装是否成功(有client和service两部分表示docker安装启动都成功了)
 
 $ docker version
+
+
+开启remote api
+vi /usr/lib/systemd/system/docker.service 
+在 ExecStart=/usr/bin/dockerd-current  后 增加 -H tcp://0.0.0.0:2375
