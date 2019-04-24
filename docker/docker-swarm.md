@@ -1,4 +1,5 @@
 ## https://blog.csdn.net/wanglei_storage/article/details/77508620
+## https://blog.csdn.net/u011781521/article/details/80468985
 
 docker swarm init --advertise-addr  192.168.71.129
 
@@ -26,8 +27,8 @@ docker network create --driver overlay --subnet 10.0.0.1/24 euraka-network
 
 docker network ls
 
- docker stack deploy -c docker-compose.yml hellowork
+docker stack deploy -c docker-compose.yml hellowork
 
- docker stack rm hellowork
+docker stack rm hellowork
 
- docker stack ls
+docker stack ls
