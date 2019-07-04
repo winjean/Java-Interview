@@ -1,3 +1,6 @@
+https://blog.csdn.net/qq_35904833/article/details/80807592  
+https://www.cnblogs.com/Tempted/p/7768694.html
+
 #查询镜像  
 docker search registry
 
@@ -20,4 +23,5 @@ curl -XGET http://registry:5000/v2/_catalog
 curl -XGET http://registry:5000/v2/image_name/tags/list  
 
 #删除镜像  
+默认是删除是关闭的，须开启
 curl -I -X DELETE http://192.168.0.153:5000/v2/fbgweb/manifests/sha256:6a67ba482a8dd4f8143ac96b1dcffa5e45af95b8d3e37aeba72401a5afd7ab8e  
