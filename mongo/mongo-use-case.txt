@@ -1,0 +1,1 @@
+db.getCollection('collection-name').update({'assetId':'F236834F606B4408872ECD1B7DBEE306','assetData.value':'1'},{$unset:{'assetData.$._class':'33'}},true,true);
