@@ -14,7 +14,7 @@ docker command
 * docker commit -a "" -m "" 容器名 镜像名:版本
 * docker rm 容器名
 
-* docker logs -f 容器id 查看tomcat日志
+* docker logs -f 容器id --tail 200 查看tomcat日志
 
 进入容器
 * docker exec -it nginx7 /bin/bash
