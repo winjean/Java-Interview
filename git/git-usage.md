@@ -142,4 +142,8 @@ repo start是对git checkout -b这个命令的封装，将所有仓库的分支�
 * git tag -l 1.\*.\*  
 打印符合检索条件的标签  
 
+### git commit
+git commit --amend -m "YOUR-NEW-COMMIT-MESSAGE"  
+amend commit message
+
 --- 未完，待续
