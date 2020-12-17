@@ -9,9 +9,17 @@
 
 # **ISOLATION**  
 * TRANSACTION_READ_UNCOMMITTED -- dirty reads, non-repeatable reads and phantom reads  
-* TRANSACTION_READ_COMMITTED -- non-repeatable reads and phantom reads  
+允许脏读取，但不允许更新丢失。如果一个事务已经开始写数据，则另外一个事务则不允许同时进行写操作，但允许其他事务读此行数据。该隔离级别可以通过“排他写锁”实现。
+不可避免 脏读、不可重复读、虚读。  
+* TRANSACTION_READ_COMMITTED -- non-repeatable reads and phantom reads
+允许不可重复读取，但不允许脏读取。这可以通过“瞬间共享读锁”和“排他写锁”实现。读取数据的事务允许其他事务继续访问该行数据，但是未提交的写事务将会禁止其他事务访问该行。  
+可避免 脏读，不可避免 不可重复读、虚读。Oracle采用读已提交。
 * TRANSACTION_REPEATABLE_READ  -- phantom reads  
+禁止不可重复读取和脏读取，但是有时可能出现幻读数据。这可以通过“共享读锁”和“排他写锁”实现。读取数据的事务将会禁止写事务（但允许读事务），写事务则禁止任何其他事务。  
+可避免 脏读、不可重复读， 不可避免 虚读。MySQL采用可重复读。
 * TRANSACTION_SERIALIZABLE  
+提供严格的事务隔离。它要求事务序列化执行，事务只能一个接着一个地执行，不能并发执行。仅仅通过“行级锁”是无法实现事务序列化的，必须通过其他机制保证新插入的数据不会被刚执行查询操作的事务访问到。  
+可避免 脏读、不可重复读、幻读情况的发生。
 
 # **TRANSACTION**  
 ## 刚性事务  
@@ -32,6 +40,7 @@
 * 持久性(Durability)  
 事务完成之后，它对于系统的影响是永久性的。该修改即使出现致命的系统故障也将一直保持。  
 例如我们在使用JDBC操作数据库时，在提交事务方法后，提示用户事务操作完成，当我们程序执行完成直到看到提示后，就可以认定事务以及正确提交，即使这时候数据库出现了问题，也必须要将我们的事务完全执行完成，否则就会造成我们看到提示事务处理完毕，但是数据库因为故障而没有执行事务的重大错误。
+
 ##刚性事务的实现方案
 * WAL（Write ahead logging）
 * 影子分页（Shadow paging）
