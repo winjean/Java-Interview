@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <property name="LOG_PATH" value="/logs/interview" />
-    <property name="LOG_FILE_NAME" value="interview" />
+    <property name="LOG_PATH" value="/logs/interview"/>
+    <property name="LOG_FILE_NAME" value="interview"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
@@ -64,18 +64,18 @@
         </layout>-->
     </appender>
 
-    
+
     <logger name="com.crossoverjie">
-        <level value="INFO" />
+        <level value="INFO"/>
         <appender-ref ref="LOGFILE-INFO"/>
     </logger>
 
 
     <root level="INFO">
-        <appender-ref ref="LOGFILE-DEBUG" />
-        <appender-ref ref="LOGFILE-INFO" />
-        <appender-ref ref="LOGFILE-ERROR" />
-        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="LOGFILE-DEBUG"/>
+        <appender-ref ref="LOGFILE-INFO"/>
+        <appender-ref ref="LOGFILE-ERROR"/>
+        <appender-ref ref="CONSOLE"/>
     </root>
 
 
