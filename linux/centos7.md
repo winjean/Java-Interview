@@ -1,58 +1,58 @@
-Æô¶¯nginx·şÎñ
+å¯åŠ¨nginxæœåŠ¡
 systemctl start nginx.service
-ÉèÖÃ¿ª»ú×ÔÆô¶¯
+è®¾ç½®å¼€æœºè‡ªå¯åŠ¨
 systemctl enable nginx.service
-Í£Ö¹¿ª»ú×ÔÆô¶¯
+åœæ­¢å¼€æœºè‡ªå¯åŠ¨
 systemctl disable nginx.service
-²é¿´·şÎñµ±Ç°×´Ì¬
+æŸ¥çœ‹æœåŠ¡å½“å‰çŠ¶æ€
 systemctl status nginx.service
-ÖØĞÂÆô¶¯·şÎñ
+é‡æ–°å¯åŠ¨æœåŠ¡
 systemctl restart nginx.service
-²é¿´ËùÓĞÒÑÆô¶¯µÄ·şÎñ
+æŸ¥çœ‹æ‰€æœ‰å·²å¯åŠ¨çš„æœåŠ¡
 systemctl list-units --type=service
 
-ĞŞ¸ÄcentosÄ¬ÈÏÆô¶¯¼¶±ğ
-systemctl set-default multi-user.target   ÃüÁîÆô¶¯
-systemctl set-default graphical.target    Í¼ĞÎ½çÃæÄ£Ê½
+ä¿®æ”¹centosé»˜è®¤å¯åŠ¨çº§åˆ«
+systemctl set-default multi-user.target   å‘½ä»¤å¯åŠ¨
+systemctl set-default graphical.target    å›¾å½¢ç•Œé¢æ¨¡å¼
 
-ÉÏÃæµÄ²Ù×÷ÃüÁîÕæÊµµÄ²Ù×÷ÎªÒÔÏÂµÄÊµÏÖ
-rm /etc/systemd/system/default.target  É¾³ıÒÑ¾­´æÔÚµÄ·ûºÅÁ´½Ó
-ln -sf /lib/systemd/system/multi-user.target /etc/systemd/system/default.target  Ä¬ÈÏ¼¶±ğ×ª»»Îª3(ÎÄ±¾Ä£Ê½)
-ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target  Ä¬ÈÏ¼¶±ğ×ª»»Îª5(Í¼ĞÎÄ£Ê½)
+ä¸Šé¢çš„æ“ä½œå‘½ä»¤çœŸå®çš„æ“ä½œä¸ºä»¥ä¸‹çš„å®ç°
+rm /etc/systemd/system/default.target  åˆ é™¤å·²ç»å­˜åœ¨çš„ç¬¦å·é“¾æ¥
+ln -sf /lib/systemd/system/multi-user.target /etc/systemd/system/default.target  é»˜è®¤çº§åˆ«è½¬æ¢ä¸º3(æ–‡æœ¬æ¨¡å¼)
+ln -sf /lib/systemd/system/graphical.target /etc/systemd/system/default.target  é»˜è®¤çº§åˆ«è½¬æ¢ä¸º5(å›¾å½¢æ¨¡å¼)
 
-Æô¶¯ÏµÍ³Ê±Æô¶¯Íø¿¨
+å¯åŠ¨ç³»ç»Ÿæ—¶å¯åŠ¨ç½‘å¡
 vi /etc/sysconfig/network-scripts/ifcfg-eno16777736
-ONBOOT=no ¸ÄÎªONBOOT=yes
+ONBOOT=no æ”¹ä¸ºONBOOT=yes
 
-½ûÓÃIPV6
+ç¦ç”¨IPV6
 vi /etc/default/grub
 GRUB_CMDLINE_LINUX="ipv6.disable=1" 
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
-32Î»£º
+32ä½ï¼š
 rpm -Uvh http://mirror.centos.org/centos/6/os/i386/Packages/ftp-0.17-54.el6.i686.rpm
 
-64Î»£º
+64ä½ï¼š
 rpm -Uvh http://mirror.centos.org/centos/6/os/x86_64/Packages/ftp-0.17-54.el6.x86_64.rpm
 
-¿ì½İ¼ü
-Ctrl + u            É¾³ı¹â±êÖ®Ç°µ½ĞĞÊ×µÄ×Ö·û
-Ctrl + k            É¾³ı¹â±êÖ®Ç°µ½ĞĞÎ²µÄ×Ö·û
-Ctrl + c            È¡Ïûµ±Ç°ĞĞÊäÈëµÄÃüÁî£¬Ïàµ±ÓÚCtrl + Break
-Ctrl + a            ¹â±êÒÆ¶¯µ½ĞĞÊ×£¨ahead of line£©£¬Ïàµ±ÓÚÍ¨³£µÄHome¼ü
-Ctrl + e            ¹â±êÒÆ¶¯µ½ĞĞÎ²£¨end of line£©
-Ctrl + f            ¹â±êÏòÇ°£¨forward£©ÒÆ¶¯Ò»¸ö×Ö·ûÎ»ÖÃ
-Ctrl + b            ¹â±êÍù»Ø£¨backward£©ÒÆ¶¯Ò»¸ö×Ö·ûÎ»ÖÃ
-Ctrl + l            ÇåÆÁ£¬Ïàµ±ÓÚÖ´ĞĞclearÃüÁî
-Ctrl + r            ÏÔÊ¾:ºÅÌáÊ¾£¬¸ù¾İÓÃ»§ÊäÈë²éÕÒÏà¹ØÀúÊ·ÃüÁî£¨reverse-i-search£©
-Ctrl + w            É¾³ı´Ó¹â±êÎ»ÖÃÇ°µ½µ±Ç°Ëù´¦µ¥´Ê£¨word£©µÄ¿ªÍ·
-Ctrl + t            ½»»»¹â±êÎ»ÖÃÇ°µÄÁ½¸ö×Ö·û
-Ctrl + y            Õ³Ìù×îºóÒ»´Î±»É¾³ıµÄµ¥´Ê
-Ctrl + Alt + d      ÏÔÊ¾×ÀÃæ
-Alt + b             ¹â±êÍù»Ø£¨backward£©ÒÆ¶¯µ½Ç°Ò»¸öµ¥´Ê
-Alt + d             É¾³ı´Ó¹â±êÎ»ÖÃµ½µ±Ç°Ëù´¦µ¥´ÊµÄÄ©Î²
-Alt + F2            ÔËĞĞ
-Alt + F4            ¹Ø±Õµ±Ç°´°¿Ú
-Alt + F9            ×îĞ¡»¯µ±Ç°´°¿Ú
-Alt + F10           ×î´ó»¯µ±Ç°´°¿Ú
-Alt + Tab           ÇĞ»»´°¿Ú
+å¿«æ·é”®
+Ctrl + u            åˆ é™¤å…‰æ ‡ä¹‹å‰åˆ°è¡Œé¦–çš„å­—ç¬¦
+Ctrl + k            åˆ é™¤å…‰æ ‡ä¹‹å‰åˆ°è¡Œå°¾çš„å­—ç¬¦
+Ctrl + c            å–æ¶ˆå½“å‰è¡Œè¾“å…¥çš„å‘½ä»¤ï¼Œç›¸å½“äºCtrl + Break
+Ctrl + a            å…‰æ ‡ç§»åŠ¨åˆ°è¡Œé¦–ï¼ˆahead of lineï¼‰ï¼Œç›¸å½“äºé€šå¸¸çš„Homeé”®
+Ctrl + e            å…‰æ ‡ç§»åŠ¨åˆ°è¡Œå°¾ï¼ˆend of lineï¼‰
+Ctrl + f            å…‰æ ‡å‘å‰ï¼ˆforwardï¼‰ç§»åŠ¨ä¸€ä¸ªå­—ç¬¦ä½ç½®
+Ctrl + b            å…‰æ ‡å¾€å›ï¼ˆbackwardï¼‰ç§»åŠ¨ä¸€ä¸ªå­—ç¬¦ä½ç½®
+Ctrl + l            æ¸…å±ï¼Œç›¸å½“äºæ‰§è¡Œclearå‘½ä»¤
+Ctrl + r            æ˜¾ç¤º:å·æç¤ºï¼Œæ ¹æ®ç”¨æˆ·è¾“å…¥æŸ¥æ‰¾ç›¸å…³å†å²å‘½ä»¤ï¼ˆreverse-i-searchï¼‰
+Ctrl + w            åˆ é™¤ä»å…‰æ ‡ä½ç½®å‰åˆ°å½“å‰æ‰€å¤„å•è¯ï¼ˆwordï¼‰çš„å¼€å¤´
+Ctrl + t            äº¤æ¢å…‰æ ‡ä½ç½®å‰çš„ä¸¤ä¸ªå­—ç¬¦
+Ctrl + y            ç²˜è´´æœ€åä¸€æ¬¡è¢«åˆ é™¤çš„å•è¯
+Ctrl + Alt + d      æ˜¾ç¤ºæ¡Œé¢
+Alt + b             å…‰æ ‡å¾€å›ï¼ˆbackwardï¼‰ç§»åŠ¨åˆ°å‰ä¸€ä¸ªå•è¯
+Alt + d             åˆ é™¤ä»å…‰æ ‡ä½ç½®åˆ°å½“å‰æ‰€å¤„å•è¯çš„æœ«å°¾
+Alt + F2            è¿è¡Œ
+Alt + F4            å…³é—­å½“å‰çª—å£
+Alt + F9            æœ€å°åŒ–å½“å‰çª—å£
+Alt + F10           æœ€å¤§åŒ–å½“å‰çª—å£
+Alt + Tab           åˆ‡æ¢çª—å£
