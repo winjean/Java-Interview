@@ -1,5 +1,4 @@
 # 限流算法
-
 限流是解决高并发大流量的一种方案，至少是可以保证应用的可用性。
 
 通常有以下两种限流方案：
@@ -8,7 +7,6 @@
 - 令牌桶算法
 
 ## 漏桶算法
-
 ![漏桶算法，来自网络.png](https://i.loli.net/2017/08/11/598c905caa8cb.png)
 
 漏桶算法非常简单，就是将流量放入桶中并按照一定的速率流出。如果流量过大时候并不会提高流出效率，而溢出的流量也只能是抛弃掉了。
@@ -25,7 +23,7 @@
 令牌桶算法支持先消费后付款，比如一个请求可以获取多个甚至全部的令牌，但是需要后面的请求付费。也就是说后面的请求需要等到桶中的令牌补齐之后才能继续获取。
 
 实例:
-```java
+```java_holder_method_tree
     @Override
     public BaseResponse<UserResVO> getUserByFeignBatch(@RequestBody UserReqVO userReqVO) {
         //调用远程服务

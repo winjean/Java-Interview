@@ -138,7 +138,7 @@ public class VolatileInc implements Runnable{
 
 举一个伪代码:
 
-```java
+```java_holder_method_tree
 int a=10 ;//1
 int b=20 ;//2
 int c= a+b ;//3
@@ -150,7 +150,7 @@ int c= a+b ;//3
 
 可能这里还看不出有什么问题，那看下一段伪代码:
 
-```java
+```java_holder_method_tree
 private static Map<String,String> value ;
 private static volatile boolean flag = fasle ;
 

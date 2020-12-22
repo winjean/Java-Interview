@@ -84,7 +84,7 @@
 
 同时为了可以通过 Channel 获取到客户端唯一标识（手机号码），还需要在 Channel 中设置对应的属性：
 
-```java
+```java_holder_method_tree
 public static void putClientId(Channel channel, String clientId) {
     channel.attr(CLIENT_ID).set(clientId);
 }
@@ -92,7 +92,7 @@ public static void putClientId(Channel channel, String clientId) {
 
 获取时手机号码时：
 
-```java
+```java_holder_method_tree
 public static String getClientId(Channel channel) {
     return (String)getAttribute(channel, CLIENT_ID);
 }
@@ -100,7 +100,7 @@ public static String getClientId(Channel channel) {
 
 这样当我们客户端下线的时便可以记录相关日志：
 
-```java
+```java_holder_method_tree
 String telNo = NettyAttrUtil.getClientId(ctx.channel());
 NettySocketHolder.remove(telNo);
 log.info("客户端下线，TelNo=" +  telNo);
