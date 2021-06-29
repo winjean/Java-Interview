@@ -2,6 +2,7 @@ Vsftpd搭建手册
 1、vsftpd安装
 vsftpd属于系统自带服务，可在系统安装时选择软件包安装，如果没有安装也可以yum安装
 yum install *vsftp*    前后加星号是为了避免缺少安装包
+
 2、 添加虚拟用户口令文件
 #vi /etc/vsftpd/vftpuser.txt
 添加虚拟用户名和密码，一行用户名，一行密码，以此类推。奇数行为用户名，偶数行为密码。
@@ -9,6 +10,7 @@ test #用户名
 123456 #密码
 Test1 #用户名
 123456 #密码
+
 3、 生成虚拟用户口令认证文件
 将刚添加的vftpuser.txt虚拟用户口令文件转换成系统识别的口令认证文件。
 首先查看系统有没有安装生成口令认证文件所需的软件db4-utils。
@@ -16,6 +18,7 @@ Test1 #用户名
 # Yum install db4*
 下面使用db_load命令生成虚拟用户口令认证文件。
 #db_load –T –t hash –f /etc/vsftpd/vftpuser.txt /etc/vsftpd/vftpuser.db
+
 4、 编辑vsftpd的PAM认证文件
 虚拟用户登录ftp需要系统的pam认证，所以要编辑/etc/pam.d
 #vi /etc/pam.d/vsftpd
@@ -28,6 +31,7 @@ account required /lib/security/pam_userdb.so db=/etc/vsftpd/vftpuser
 #useradd–s /sbin/nologin vftpd  # vsftpd服务的宿主用户
 #chown –R vsftpd.vsftpd /var/ftp
 # chown –R vsftpd.vsftpd /etc/vsftpd #这里注意下/etc/vsftpd下的vsftpd.conf要设置成root的属组，不然访问不了，还没搞明白什么原因。
+
 5. 配置vsftpd.conf（设置虚拟用户配置项）
 #vi /etc/vsftpd/vsftpd.conf
 anonymous_enable=NO #设定不允许匿名访问
@@ -69,6 +73,7 @@ guest_enable=YES #设定启用虚拟用户功能 
 virtual_use_local_privs=YES #设定虚拟用户的权限符合他们的宿主用户 
 user_config_dir=/etc/vsftpd/ftp_user 设定虚拟用户个人Vsftp的配置文件存放路径。/etc/vsftpd/ ftp_user里面的文件都是虚拟用户的专用配置文件，注意：配置文件名必须和虚拟用户名相同
 那我们就专门为虚拟用户建立一个配置文件目录吧
+
 ６、建立虚拟用户配置文件/
 #mkdir /etc/vsftpd/ftp_user
 #vim test #虚拟用户只有下载权限
@@ -82,5 +87,6 @@ anon_world_readable_only=NO #具有浏览FTP目录和下载权限
 anon_upload_enable=YES #具有上传文件权限
 anon_mkdir_write_enable=YES #具有建立和删除目录的权利
 anon_other_write_enable=YES #具有文件改名和删除文件的权利
+
 ７． 重启vsftpd服务
 #service vsftpd restart
