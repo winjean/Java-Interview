@@ -9,6 +9,8 @@
     * 打开的锁链
     * 监视器解锁情况跟踪
     
+    jstack pid > winjean.log
+    
 * jstat  
 用于监控基于HotSpot的JVM，对其堆的使用情况进行实时的命令行的统计
     - 类的加载及卸载情况
